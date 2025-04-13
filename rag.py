@@ -19,7 +19,7 @@ from langchain_community.document_loaders import UnstructuredURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_groq import ChatGroq
-from langchain_huggingface.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface.embeddings import HuggingFaceEmbeddingsvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvm
 from huggingface_hub import login
 import os
 
@@ -123,6 +123,6 @@ if __name__=="__main__":
     # )
     # print(results)
 
-    answer,sources=generate_answer("Tell me what was the 30 year fixed mortgate rate along with the date?")
+    answer,sources=generate_answers("Tell me what was the 30 year fixed mortgate rate along with the date?")
     print(f"Answer:{answer}")
     print(f"sources:{sources}")
